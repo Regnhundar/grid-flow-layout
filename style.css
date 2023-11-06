@@ -1,0 +1,49 @@
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: .3rem;
+    width: 80vw;
+    height: 200vh;
+    margin: 0 10vw;
+}
+
+header {
+    grid-column: auto / span 3;
+    grid-row: auto / span 3;
+    background-color: aqua;
+}
+
+nav {
+    grid-column: auto / span 3;
+    grid-row: auto / span 1;
+    background-color: hotpink;
+}
+
+main {
+    grid-column: auto / span 2;
+    grid-row: auto / span 6;
+    background-color: greenyellow;
+}
+
+aside {
+    grid-column: auto / span 1;
+    grid-row: auto / span 6;
+    background-color: aquamarine;
+}
+
+footer {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+    background-color: yellow;
+}
